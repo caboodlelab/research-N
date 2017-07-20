@@ -8,12 +8,12 @@ const email = {
   },
 
   setLocation: function (req, res) {
+    console.log('req', req.body);
     request({
       method: 'POST',
       uri: 'https://1bea6fa8.ngrok.io/api/v1/test',
       form: req.body
     }, function (error, response, body) {
-      console.log('error', error);
       if (error) {
         res.status(500);
         return res.jsonp(error);
