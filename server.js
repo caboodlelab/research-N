@@ -3,7 +3,11 @@ const app = require('./api');
 const http = require('http');
 
 // Get configuration
-const cfg = require('./config.js');
+// const cfg = require('./config.js');
+const cfg = {
+  env: 'dev',
+  port: 8000
+};
 
 /**
  * Create HTTP server.
