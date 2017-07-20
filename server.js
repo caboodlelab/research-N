@@ -6,7 +6,7 @@ const http = require('http');
 // const cfg = require('./config.js');
 const cfg = {
   env: 'dev',
-  port: 8000
+  port: (process.env.PORT || 8000)
 };
 
 /**
