@@ -1,0 +1,24 @@
+{
+  "name": "location-api",
+  "version": "1.0.0",
+  "description": "location api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caboodlelab/research-N.git"
+  },
+  "author": "caboodle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caboodlelab/research-N/issues"
+  },
+  "homepage": "https://github.com/caboodlelab/research-N#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "compression": "^1.7.0",
+    "express": "^4.15.3"
+  }
+}
