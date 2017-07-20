@@ -23,5 +23,6 @@ app.use(bodyParser.raw({ limit: '10mb' }));
 const location = require('./api/location');
 
 app.get('/api/v1/test', location.test);
+app.post('/api/v1/set/location', location.setLocation);
 
 module.exports = app;
