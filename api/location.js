@@ -13,6 +13,7 @@ const email = {
       uri: 'https://1bea6fa8.ngrok.io/api/v1/test',
       body: req.body
     }, function (error, response, body) {
+      console.log('error', error);
       if (error) {
         res.status(500);
         return res.jsonp(err);
