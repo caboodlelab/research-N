@@ -24,5 +24,6 @@ const location = require('./api/location');
 
 app.get('/api/v1/test', location.test);
 app.post('/api/v1/set/location', location.setLocation);
+app.post('/api/v1/test', location.test_2);
 
 module.exports = app;
