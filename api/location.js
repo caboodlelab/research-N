@@ -1,4 +1,5 @@
 const request = require('request');
+const cfg = require('../config.js');
 
 const email = {
 
@@ -8,10 +9,9 @@ const email = {
   },
 
   setLocation: function (req, res) {
-    console.log('req', req.body);
     request({
       method: 'POST',
-      uri: 'https://1bea6fa8.ngrok.io/api/v1/test',
+      uri: cfg.apiUrl,
       body: req.body,
       json: true
     }, function (error, response, body) {
@@ -26,7 +26,6 @@ const email = {
   },
 
   test_2: function (req, res) {
-    console.log('req.body', req.body);
     res.status(200);
     res.jsonp({ message: 'API REACHED' });
   },
