@@ -12,7 +12,7 @@ const email = {
     request({
       method: 'POST',
       uri: 'https://1bea6fa8.ngrok.io/api/v1/test',
-      form: req.body,
+      body: req.body,
       json: true
     }, function (error, response, body) {
       if (error) {
